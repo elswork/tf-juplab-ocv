@@ -1,23 +1,13 @@
-FROM elswork/tensorflow-diy:latest
+FROM elswork/tf-opencv:latest
 
 LABEL mantainer="Eloy Lopez <elswork@gmail.com>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libzmq3-dev \
-    python-tk \
-    python3-matplotlib \
-    libxml2-dev libxslt-dev \
-    libjpeg62 libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev \
-    libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
-    libxvidcore-dev libx264-dev \
-    qt4-dev-tools python3-pil && \
+    python3-matplotlib && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ARG OCV_FILE=opencv-python
-
 RUN pip3 --no-cache-dir install \
-    lxml cython $OCV_FILE \
     ipykernel jupyterlab \
     #sklearn \
     #pandas \

@@ -21,7 +21,7 @@ docker build -t elswork/tf-juplab-ocv:latest .
 Build for arm32v7
 
 ```sh
-docker build --no-cache -t elswork/tf-juplab-ovc:arm32v7 --build-arg OCV_FILE=https://www.piwheels.org/simple/opencv-python/opencv_python-3.4.2.17-cp35-cp35m-linux_armv7l.whl .
+docker build --no-cache -t elswork/tf-juplab-ocv:latest .
 ```
 
 ## My Real Usage Example
