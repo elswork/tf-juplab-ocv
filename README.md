@@ -41,6 +41,13 @@ docker run -d -p 8888:8888 -p 0.0.0.0:6006:6006 \
  --restart=unless-stopped elswork/tf-juplab-ocv:latest
 ```
 
+If you want to add access to USB Cam attached to host (--device=/dev/video0).
+
+```sh
+docker run -d -p 8888:8888 -p 0.0.0.0:6006:6006 --device=/dev/video0  \
+ --restart=unless-stopped elswork/tf-juplab-ocv:latest
+```
+
 Point your browser to `http://localhost:8888`
 
 First time you open it, you should provide a Token to log on you cand find it with this command:
