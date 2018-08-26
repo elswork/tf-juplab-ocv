@@ -1,7 +1,7 @@
 # OpenCV + JupyterLab + Tensorflow
 
 A [Docker](http://docker.com) file to build images for AMD & ARM devices over a base image based with a minimal installation of [Tensorflow](https://www.tensorflow.org/) an open source software library for numerical computation using data flow graphs. 
-Also included in base image [OpenCV](https://opencv.org/)is a library of programming functions mainly aimed at real-time computer vision. 
+Also included in base image [OpenCV](https://opencv.org/) is a library of programming functions mainly aimed at real-time computer vision. 
 Over this base will be installed [JupyterLab](https://github.com/jupyterlab/jupyterlab) an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text. Computational Narratives as the Engine of Collaborative Data Science. All this under Python3 language.
 
 > Be aware! You should read carefully the usage documentation of every tool!
