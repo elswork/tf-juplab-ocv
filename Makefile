@@ -1,4 +1,4 @@
-NAME ?= elswork/tf-juplab-ovc
+NAME ?= elswork/tf-juplab-ocv
 
 build:
 	docker build --no-cache -t $(NAME):latest --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
