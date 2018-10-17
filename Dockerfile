@@ -26,12 +26,14 @@ RUN pip3 --no-cache-dir install \
     && \
     python3 -m ipykernel.kernelspec
 
+COPY jupyter_notebook_config.py /root/.jupyter/
+
 # Copy sample notebooks.
 COPY notebooks /notebooks
 
 # TensorBoard & Jupyter
 EXPOSE 6006 8888
 
-WORKDIR "/notebooks"
+WORKDIR /notebooks
 
 CMD jupyter lab --ip=* --no-browser --allow-root
